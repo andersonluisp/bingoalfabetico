@@ -5,6 +5,7 @@
     android:id="@+id/teste"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
     android:keepScreenOn="true"
     tools:context=".MainActivity">
 
@@ -12,17 +13,17 @@
         android:id="@+id/playButton"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginBottom="156dp"
-        android:layout_marginEnd="92dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="155dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="156dp"
         android:text="@string/sortear"
         android:textColor="@android:color/white"
+        app:backgroundTint="@color/cardview_dark_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bingoButton"
@@ -33,6 +34,7 @@
         android:layout_marginBottom="32dp"
         android:text="@string/bingo"
         android:textColor="@android:color/white"
+        app:backgroundTint="@color/cardview_dark_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
@@ -49,6 +51,8 @@
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/playButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
