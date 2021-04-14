@@ -22,9 +22,9 @@ Após o término da rodada anterior pressionar o botão Outra Rodada para voltar
 
 ## Tela do APP
 
-![image-20210414161017483](C:\Users\Anderson\AppData\Roaming\Typora\typora-user-images\image-20210414161017483.png)
+![image-20210414161017483](https://i.imgur.com/iRAgpB7.png)
 
 ## Ideia de Cartela
 
-![image-20210414161107295](C:\Users\Anderson\AppData\Roaming\Typora\typora-user-images\image-20210414161107295.png)
+![image-20210414161107295](https://i.imgur.com/SljIuie.png)
 
