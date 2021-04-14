@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BingoAlfabetico</string>
+    <string name="sortear">Sortear Letra</string>
 </resources>
