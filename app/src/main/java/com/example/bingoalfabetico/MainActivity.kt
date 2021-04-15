@@ -3,6 +3,7 @@ package com.example.bingoalfabetico
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.media.MediaPlayer
+import androidx.core.util.rangeTo
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -92,12 +93,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bingo() {
+        var listaLetrasSorteadas: String = ""
+        letrasSorteadas.forEach { listaLetrasSorteadas = (listaLetrasSorteadas + "$it - ") }
         textView.setText("BINGO!!!\n" +
                 "AS LETRAS SORTEADAS FORAM:\n" +
-                " $letrasSorteadas.")
+                " ${listaLetrasSorteadas.removeRange((listaLetrasSorteadas.lastIndex - 2), listaLetrasSorteadas.lastIndex + 1)}")
         bingo = 1
         contador = 0
         playButton.setText("Outra Rodada")
         letrasSorteadas.clear()
+        listaLetrasSorteadas = ""
     }
 }
