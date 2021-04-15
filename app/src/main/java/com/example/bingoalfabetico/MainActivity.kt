@@ -98,5 +98,6 @@ class MainActivity : AppCompatActivity() {
         bingo = 1
         contador = 0
         playButton.setText("Outra Rodada")
+        letrasSorteadas.clear()
     }
 }
