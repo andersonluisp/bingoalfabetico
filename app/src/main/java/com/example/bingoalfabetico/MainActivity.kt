@@ -24,17 +24,17 @@ class MainActivity : AppCompatActivity() {
 
         embaralharLetras()
 
-            btPlay.setOnClickListener {
-            if (bingo == 1){
-                embaralharLetras()
-                bingo = 0
-                falarLetra()
-                playButton.setText("Sortear outra letra")
+        btPlay.setOnClickListener {
+        if (bingo == 1){
+            embaralharLetras()
+            bingo = 0
+            falarLetra()
+            playButton.setText("Sortear outra letra")
 
-            }
-            else {
-                falarLetra()
-            }
+        }
+        else {
+            falarLetra()
+        }
         }
 
         btBingo.setOnClickListener{
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
              textView.setText("TODAS AS LETRAS FORAM SORTEADAS\n" +
                      "A sequência das letras sorteadas foram:\n $letrasSorteadas\"")
          }
-        else {
+         else {
              letraSorteada = alfabeto[contador].toString()
              when {
                  letraSorteada == "A" -> audioLetra = MediaPlayer.create(this, R.raw.a)
